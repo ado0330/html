@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .grid {
+            display: grid;
+            grid-template-rows: auto auto auto;
+            height: 100%;
+        }
+
+        .flexbox {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            align-items: center;
+        }
+
+        .left-section {
+            margin-right: 10px;
+        }
+        .user_info {
+            flex: 1;
+
+            margin-right: 8px;
+        }
+        .right-section {
+            margin-right: 8px;
+        }
+
+        .profile_pic {
+            width: 40px;
+            border-radius: 50px;
+        }
+
+        p {
+            font-family: Arial;
+            margin: 0;
+            font-size: 10px;
+            color: gray;
+        }
+        .name {
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 3px;
+            color: black;
+        }
+
+        .follow_button {
+            background-color: rgba(64, 147, 238);
+            border: none;
+            border-radius: 3px;
+            color:white;
+            font-weight: bold;
+            padding-left: 8px;
+            padding-right: 8px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            cursor: pointer;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="grid">
+        <div class="flexbox">
+            <div class="left-section">
+                <img class="profile_pic" src="channel-1.jpeg" alt="">
+            </div>
+            <div class="user_info">
+                <p class="name">Oliver</p>
+                <p>The Cat</p>
+                <p>Popular</p>
+            </div>
+            <div class="right-section">
+                <button class="follow_button">Follow</button>
+            </div>
+        </div>
+        <div class="flexbox">
+            <div class="left-section">
+                <img class="profile_pic" src="channel-1.jpeg" alt="">
+            </div>
+            <div class="user_info">
+                <p class="name">Oliver</p>
+                <p>The Cat</p>
+                <p>Popular</p>
+            </div>
+            <div class="right-section">
+                <button class="follow_button">Follow</button>
+            </div>
+        </div>
+        <div class="flexbox">
+            <div class="left-section">
+                <img class="profile_pic" src="channel-1.jpeg" alt="">
+            </div>
+            <div class="user_info">
+                <p class="name">Oliver</p>
+                <p>The Cat</p>
+                <p>Popular</p>
+            </div>
+            <div class="right-section">
+                <button class="follow_button">Follow</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
