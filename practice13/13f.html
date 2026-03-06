@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        div, p {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .profile-pic-flexbox {
+
+            display: flex;
+            align-items: top;
+            margin-right: 6px;
+        }
+        .profile-pic {
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+
+        }
+
+        .tweet_content {
+            flex-direction: column;
+            display: flex;
+        }
+
+        .top-section {
+            display: flex;
+            margin-bottom: 4px;
+        }
+
+        .name {
+            font-weight: bold;
+            margin-right: 3px;
+        }
+
+        .username {
+            color: rgb(105, 104, 104);
+        }
+
+        .middle-section {
+            width: 100%;
+            display: flex;
+            margin-bottom: 8px;
+        }
+
+        .bottom-section {
+            width: 100%;
+            display: flex;
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 12px;
+            border-color: rgba(211, 211, 211);
+            overflow: hidden;
+        }
+
+        .youtube-thumbnail {
+            background-color: rgba(211, 211, 211);
+            width: 80px;
+        }
+
+        .video-info {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            padding-left: 10px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+
+        }
+
+        .video-link {
+            color: rgb(105, 104, 104);
+            font-size: 14px;
+            margin-bottom: 2px;
+        }
+
+        .video-title {
+            font-size: 14px;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="grid">
+        <div class="container">
+        <div class="profile-pic-flexbox">
+            <img class="profile-pic" src="channel-1.jpeg" alt="">
+        </div>
+        <div class="tweet_content">
+            <div class="top-section">
+                <p class="name">supersimple.dev</p>
+                <p class="username">@SuperSimpleDev</p>
+            </div>
+            <div class="middle-section">What is backend web development? A complete overview. New video is up!</div>
+            <div class="bottom-section">
+                <div class="youtube-thumbnail"></div>
+                <div class="video-info">
+                    <p class="video-link">youtube.com</p>
+                    <p class="video-title">Backend web development - a complete overview (2021)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="profile-pic-flexbox">
+            <img class="profile-pic" src="channel-1.jpeg" alt="">
+        </div>
+        <div class="tweet_content">
+            <div class="top-section">
+                <p class="name">supersimple.dev</p>
+                <p class="username">@SuperSimpleDev</p>
+            </div>
+            <div class="middle-section">What is backend web development? A complete overview. New video is up!</div>
+            <div class="bottom-section">
+                <div class="youtube-thumbnail"></div>
+                <div class="video-info">
+                    <p class="video-link">youtube.com</p>
+                    <p class="video-title">Backend web development - a complete overview (2021)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="profile-pic-flexbox">
+            <img class="profile-pic" src="channel-1.jpeg" alt="">
+        </div>
+        <div class="tweet_content">
+            <div class="top-section">
+                <p class="name">supersimple.dev</p>
+                <p class="username">@SuperSimpleDev</p>
+            </div>
+            <div class="middle-section">What is backend web development? A complete overview. New video is up!</div>
+            <div class="bottom-section">
+                <div class="youtube-thumbnail"></div>
+                <div class="video-info">
+                    <p class="video-link">youtube.com</p>
+                    <p class="video-title">Backend web development - a complete overview (2021)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+</body>
+</html>

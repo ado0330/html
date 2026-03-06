@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        div {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        p {
+            margin: 0;
+            font-family: Arial;
+            color: gray;
+        }
+
+        .sidebar {
+            display: flex;
+            background-color: green;
+            position:fixed;
+            bottom: 0px;
+            left: 0px;
+            top: 0px;
+            width: 250px;
+        }
+
+        .profile-pic-flexbox {
+            display: flex;
+            background-color:rgba(32, 34, 38);
+            flex-direction: column;
+            width: 65px;
+            align-items: center;
+        }
+
+        .profile-pic {
+            border-radius: 50px;
+            width: 80%;
+            margin-top: 8px;
+        }
+
+        .info-box {
+            background-color: rgba(47, 49, 53);
+            flex: 1;
+        }
+
+        .top-section {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 12px;
+            padding-right: 12px;
+            padding-top: 12px;
+            align-items: center;
+        }
+
+        .info {
+            color: white;
+        }
+
+        .add-icon {
+            color:gray;
+            font-size: 26px;
+        }
+
+        .bottom-section {
+            display: grid;
+            grid-template-rows: 40px 40px 40px;
+            padding-left: 12px;
+            padding-top: 8px;
+            padding-right: 8px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="profile-pic-flexbox">
+            <img class="profile-pic" src="channel-1.jpeg" alt="">
+            <img class="profile-pic" src="channel-1.jpeg" alt="">
+            <img class="profile-pic" src="channel-1.jpeg" alt="">
+        </div>
+        <div class="info-box">
+            <div class="top-section">
+                <div class="info">INFO</div>
+                <div class="add-icon">+</div>
+            </div>
+            <div class="bottom-section">
+                <p># new-videos</p>
+                <p># updates</p>
+                <p># faq</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
